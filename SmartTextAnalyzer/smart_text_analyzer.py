@@ -107,4 +107,3 @@ analyzer = TextAnalyzer()
 analyzer.load_text("text3.txt")
 analyzer.load_sentiment()
 results = analyzer.analyze_text()
-pass
