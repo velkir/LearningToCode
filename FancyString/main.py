@@ -1,9 +1,8 @@
-def make_fancy(str):
-    listed_str = list(str)
-    new_str = [char for idx, char in enumerate(listed_str) if idx < 2 or not(listed_str[idx-1]==listed_str[idx-2]==char)]
-    return "".join(new_str)
+def make_fancy(s):
+    result_s = [c for i, c in enumerate(s) if i < 2 or not(s[i-1]==s[i-2]==c)]
+    return "".join(result_s)
 
 # s = "leeetcode"
-# s = "aaabaaaa"
-s = "aab"
+s = "aaabaaaa"
+# s = "aab"
 print(make_fancy(s))
