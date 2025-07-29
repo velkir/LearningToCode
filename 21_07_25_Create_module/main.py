@@ -1,8 +1,8 @@
-from utility import tourette, cis_region_end_bracket, nothing_happened_in_tiananmen_in_1989 
+from utility import random_prefix, add_closing_bracket, keyword_filter
 
-print(tourette("I'm Alex."))
-print(cis_region_end_bracket(1))
-print(cis_region_end_bracket("I'm Alex."))
-print(cis_region_end_bracket("I'm Alex!"))
-print(nothing_happened_in_tiananmen_in_1989("THEY KILLED STUDENTS IN TIANANMEN SQUARE IN 1989!!"))
-print(nothing_happened_in_tiananmen_in_1989("1989 is the best year so far!"))
+print(random_prefix("I'm Alex."))
+print(add_closing_bracket(1))
+print(add_closing_bracket("I'm Alex."))
+print(add_closing_bracket("I'm Alex!"))
+print(keyword_filter("2025 is the best!!"))
+print(keyword_filter("2024 sucks!"))
