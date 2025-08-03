@@ -1,4 +1,4 @@
-#Build smart_text_analyzer.py: read .txt, compute word frequency + unique word ratio,
+#Build SmartTextAnalyzer.py: read .txt, compute word frequency + unique word ratio,
 #sentiment count (using simple positive/negative keywords).
 #Provide sample input/output and docstrings.
 

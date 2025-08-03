@@ -3,7 +3,7 @@ import configparser
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import datetime
-import trello_connector
+import TrelloConnector
 
 config = configparser.ConfigParser()
 config.read("config.ini")
@@ -24,7 +24,7 @@ message["Subject"] = subject
 trello_api_key = config["TRELLO"]["public"]
 trello_token = config["TRELLO"]["token"]
 trello_list_id = config["TRELLO"]["main_board_to_do_list_id"]
-trello = trello_connector.Trello(trello_api_key, trello_token)
+trello = TrelloConnector.Trello(trello_api_key, trello_token)
 
 cards = trello.get_card_names_from_list(trello_list_id)
 to_do_list = '\n'.join(cards)
